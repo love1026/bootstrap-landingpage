@@ -1,0 +1,19 @@
+@font-face {
+  font-family: lovepreets;
+  src: url(BungeeSpice-Regular.ttf);
+}
+
+#main-section,
+#aboutus,
+#pricing {
+  height: 700px;
+}
+.text-large {
+  font-size: 4rem;
+}
+.font-size {
+  font-weight: bold;
+}
+.my-font-family {
+  font-family: lovepreets;
+}
