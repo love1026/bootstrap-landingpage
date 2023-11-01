@@ -6,7 +6,7 @@
 #main-section,
 #aboutus,
 #pricing {
-  height: 700px;
+  min-height: 700px;
 }
 .text-large {
   font-size: 4rem;
@@ -16,4 +16,22 @@
 }
 .my-font-family {
   font-family: lovepreets;
+}
+@media screen and (max-width: 750px) {
+  #width {
+    width: 100% !important;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #main-section {
+    padding: 0 !important;
+  }
+  #aboutus p {
+    margin-right: 0 !important;
+  }
+  #main-section,
+  #aboutus,
+  #pricing {
+    min-height: 800px;
+  }
 }
