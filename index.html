@@ -208,21 +208,27 @@
     </footer>
     <script>
       function validateForm() {
+        // Name validation
         var x = document.getElementById("name").value;
         if (x == "") {
           alert("Name must be filled out");
           return false;
+        } else if (x.length > 15) {
+          alert("Name should be less than 15 letters");
+          return false;
         }
+
+        // Email validation
         var y = document.getElementById("email").value;
         if (y == "") {
           alert("email must be filled out");
           return false;
-        }
-        if (document.getElementById("email").checkValidity() === false) {
+        } else if (document.getElementById("email").checkValidity() === false) {
           alert("email should be correct");
           return false;
         }
 
+        //Message validation
         var z = document.getElementById("message").value;
         if (z == "") {
           alert("Message must be filled out");
