@@ -218,12 +218,17 @@
           alert("email must be filled out");
           return false;
         }
+        if (document.getElementById("email").checkValidity() === false) {
+          alert("email should be correct");
+          return false;
+        }
+
         var z = document.getElementById("message").value;
         if (z == "") {
           alert("Message must be filled out");
           return false;
         }
-        alert("your form is submitted sucessfully");
+        alert("your form is submitted successfully");
       }
     </script>
     <script src="script.js"></script>
